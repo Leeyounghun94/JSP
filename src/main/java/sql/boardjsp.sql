@@ -52,3 +52,5 @@ insert into board(num, title, content, id, postdate, visitcount) values (seq_boa
 
 select * from member;
 select * from board;
+
+select * from member where id='kkw' and pass='1234';

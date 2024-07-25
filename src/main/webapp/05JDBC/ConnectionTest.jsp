@@ -13,10 +13,6 @@
 	JDBConnect jdbConnect = new JDBConnect(); // 1, 2단계
 	jdbConnect.close(); // 5단계
 	
-	
-	
-	
-	
 	%>
 	
 </body>
