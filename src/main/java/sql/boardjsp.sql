@@ -54,3 +54,5 @@ select * from member;
 select * from board;
 
 select * from member where id='kkw' and pass='1234';
+
+select count(*) from board where title like '%제목%';
