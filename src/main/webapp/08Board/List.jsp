@@ -82,7 +82,8 @@ BoardDAO boardDAO = new BoardDAO(application);//1단계, 2단계 완료
 	%>
 		<tr>
 			<td><%= virtualNum %></td>
-			<td><%= dto.getTitle() %></td>	
+			<td align="left">
+			<a href="View.jsp?num=<%=dto.getNum() %> "><%= dto.getTitle() %></a></td> 	<!-- ?num=2 request.getParameter("num") -->	
 			<td><%= dto.getId() %></td>
 			<td><%= dto.getVisitcount() %></td>
 			<td><%= dto.getPostdate() %></td>
@@ -102,8 +103,8 @@ BoardDAO boardDAO = new BoardDAO(application);//1단계, 2단계 완료
 			<td>
 			<button type="button" onclick="location.href='Write.jsp';">글쓰기</button>
 		</tr>
-	
-	
+		
+		
 	
 	</table>
 

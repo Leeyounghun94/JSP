@@ -56,3 +56,7 @@ select * from board;
 select * from member where id='kkw' and pass='1234';
 
 select count(*) from board where title like '%제목%';
+
+select B.*, M.* from member M inner join board B on M.id = M.id where num=2;
+
+update board set visitcount = visitcount+1 where num=2 ;

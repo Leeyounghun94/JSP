@@ -4,11 +4,19 @@ public class MemberDTO {
 	// Member 객체
 	
 	
+	@Override
+	public String toString() {
+		return "MemberDTO [id=" + id + ", pass=" + pass + ", name=" + name + ", regdate=" + regdate + "]";
+	}//객체를 문자열로 반환하여 콘솔 출력.
 	
 	
 	//필드
 	private String id;
 	private String pass;
+	
+
+
+
 	private String name;
 	private String regdate;
 	
