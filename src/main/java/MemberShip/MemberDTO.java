@@ -13,10 +13,6 @@ public class MemberDTO {
 	//필드
 	private String id;
 	private String pass;
-	
-
-
-
 	private String name;
 	private String regdate;
 	

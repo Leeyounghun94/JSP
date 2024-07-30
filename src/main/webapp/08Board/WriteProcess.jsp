@@ -18,6 +18,12 @@
 	BoardDAO boardDAO = new BoardDAO(application); // 1, 2단계
 	int result = boardDAO.insertWrite(boardDTO);	// 3, 4단계
 	
+	/* int result = 0;
+	for(int i=1 ; i<100 ; i++) {// 글쓰기 1번에 100개 만든다.
+		boardDTO.setTitle(title+"-"+i);
+		result = boardDAO.insertWrite(boardDTO); 
+	} 이 부분은 페이징 테스트 하기 위한 코드이므로 글 작성할때 100개가 작성된다는점 유의! */
+	
 	boardDAO.close(); // 5단계
 	
 	if(result == 1) {
