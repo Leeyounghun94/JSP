@@ -67,3 +67,20 @@ select * from (
 												select * from board order by num desc
 												) Tb
 				) where rNum between 1 and 10 ;
+				
+create table myfile (
+	idx number primary key,
+	name varchar2(50) not null,
+	title varchar2(200) not null,
+	cate varchar2(30),
+	ofile varchar2(100) not null, --원본 파일명
+	sfile varchar2(100) not null, --저장 파일명
+	postdate date default sysdate not null
+
+);
+
+select * from myfile;
+drop table myfile;
+
+
+
