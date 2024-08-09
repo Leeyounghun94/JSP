@@ -20,6 +20,26 @@
   <param-value> web.xml에서 만든 초기화 매개값 </param-value>
   </context-param><!-- jsp에서 web.xml 값을 가져오는 연습. -->
   
+  
+  <servlet>
+  	<servlet-name>MemberAuth</servlet-name>
+  	<servlet-class>servlet.MemberAuth</servlet-class>
+  <init-param>
+  	<param-name>admin_id</param-name>
+  	<param-value>kkk</param-value>
+  </init-param>
+  </servlet> <!-- 서블릿용 기본 자료 -->
+  
+  <!-- url 매핑용 코드 http://localhost/board-jsp/13Servlet/MemberAuth -->
+  <servlet-mapping>
+  	<servlet-name>MemberAuth</servlet-name>
+  	<url-pattern>/13Servlet/MemberAuth</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  
+  
   <!-- JDBC용 코드 삽입 : 컴파일 없이 수정이 가능하다.  -->
   
  	<context-param>
